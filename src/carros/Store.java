@@ -11,14 +11,54 @@ package carros;
  */
 public class Store {
     private Address address;
-    private Car [] car; 
+    private int cantidadCarros;
+    private Car [] car;
 
     public Store(Address address) {
         this.address = address;
-        ;
+        this.cantidadCarros = 0;
+        this.car = new Car[20];
     }
+
+   
     
-    public void addCar(Car[]car){
-        
+
+    public Address getAddress() {
+        return address;
     }
+
+    public int getCantidadCarros() {
+        return cantidadCarros;
+    }
+ 
+   
+    public boolean addCar(Car newcar){ 
+        boolean resultado = false;
+        
+       
+        
+        
+       if(this.cantidadCarros < 20){
+           
+       
+         
+         this.car[this.cantidadCarros] = newcar;
+         this.cantidadCarros++;
+         return true;
+      }else{ 
+          return false;
+    } 
+   
+       
+    }
+
+  
+
+    public Car[] getCar() {
+        return car;
+    }
+      
 }
+  
+    
+

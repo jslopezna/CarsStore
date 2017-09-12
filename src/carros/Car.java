@@ -11,12 +11,13 @@ package carros;
  */
 public class Car {
     private CarModel Model; 
+    private int Traveled; 
 
     public Car(CarModel Model, int Traveled) {
         this.Model = Model;
         this.Traveled = Traveled;
     }
-    private int Traveled; 
+    
 
     public CarModel getModel() {
         return Model;
@@ -29,6 +30,6 @@ public class Car {
     public void setTraveled(int Traveled) {
         this.Traveled = Traveled;
     }
-    
+   
     
 }

@@ -13,12 +13,16 @@ public class CarModel {
     
     private int price; 
     private Category category; 
-    private String ModelNumbre; 
+    private String ModelNumber; 
 
-    public CarModel(int price, Category category, String ModelNumbre) {
+    public CarModel(int price, Category category, String modelNumber) {
         this.price = price;
         this.category = category;
-        this.ModelNumbre = ModelNumbre;
+        this.ModelNumber = modelNumber;
+    }
+
+    public String getModelNumber() {
+        return ModelNumber;
     }
 
     public int getPrice() {
@@ -29,8 +33,8 @@ public class CarModel {
         return category;
     }
 
-    public String getModelNumbre() {
-        return ModelNumbre;
-    }
+    
+
+   
     
 }

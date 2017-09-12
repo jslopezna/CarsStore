@@ -11,7 +11,15 @@ package carros;
  */
 public class Category {
     private String Name; 
+    private CarModel carModel;
 
+    public CarModel getCarModel() {
+        return carModel;
+    }
+
+    public Category(CarModel carModel) {
+        this.carModel = carModel;
+    }
     public Category(String Name) {
         this.Name = Name;
     }
@@ -19,6 +27,10 @@ public class Category {
     public String getName() {
         return Name;
     }
-    
+   
+    public boolean addCategory(String name){
+        Category category= new Category(name);
+        return true; 
+    }
     
 }
